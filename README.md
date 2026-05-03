@@ -1,6 +1,12 @@
 # StatTrack v1.1 BepInEx Edition
 
-StatTrack v1.1 BepInEx Edition is a Clone Hero v1.1 NoteSplit and OBS export mod built for the Unity IL2CPP version of the game. It runs through BepInEx 6 and does not patch or replace Clone Hero game binaries.
+StatTrack v1.1 BepInEx Edition is a Clone Hero v1.1 NoteSplit mod built for the Unity IL2CPP version of the game. It runs through BepInEx 6 and does not patch or replace Clone Hero game binaries.
+
+This update is mainly focused on bringing NoteSplit support back to Clone Hero v1.1. OBS exports are currently disabled for this update and will return behind an enable option in a later release.
+
+![NoteSplit gameplay view](docs/images/notesplit-gameplay.png)
+
+![NoteSplit overlay view](docs/images/notesplit-overlay.png)
 
 ## Features
 
@@ -10,7 +16,7 @@ StatTrack v1.1 BepInEx Edition is a Clone Hero v1.1 NoteSplit and OBS export mod
 - Separate tracking per song speed
 - Practice mode live tracking without saving attempts or PBs
 - Bot mode protection so automated runs do not update PB data
-- OBS text exports are disabled for this build
+- OBS text exports are currently disabled for this update
 - Sharded song memory so large libraries do not require rewriting one huge memory file
 - External `NoteSplit Overlay.exe` window for OBS window capture
 
@@ -46,7 +52,7 @@ StatTrack stores user data under:
 %LOCALAPPDATA%\StatTrack
 ```
 
-OBS export support is currently disabled for this build. The folder is reserved for a later release:
+OBS export support is currently disabled for this update. This build is focused on restoring NoteSplit support first, and the folder is reserved for a later release:
 
 ```text
 %LOCALAPPDATA%\StatTrack\obs
@@ -63,6 +69,10 @@ memory\songs\*.json
 ```
 
 `memory.json` stores small global data. Per-song NoteSplit history is stored as sharded files under `memory\songs`.
+
+## NoteSplit Behavior
+
+NoteSplit tracks the total miss count itself while a song is active. Overstrums are shown by turning the corresponding section's zero red, so a red `0` means the section had no missed notes but the FC was broken by an overstrum.
 
 ## Notes
 
