@@ -1,0 +1,32 @@
+THIRD PARTY NOTICES
+===================
+
+This StatTrack v1.1 distribution bundles third-party software required to load and run the mod with Clone Hero v1.1.
+
+BepInEx
+-------
+Included component: BepInEx Unity IL2CPP Windows x64 loader
+Included build: BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.755+3fab71a
+Project: https://github.com/BepInEx/BepInEx
+Builds: https://builds.bepinex.dev/projects/bepinex_be
+License: GNU Lesser General Public License v2.1 (LGPL-2.1)
+
+This package includes BepInEx loader files such as BepInEx/, dotnet/, doorstop_config.ini, .doorstop_version, and winhttp.dll.
+No Clone Hero game binaries are patched or redistributed by StatTrack.
+
+Newtonsoft.Json
+---------------
+Included component: Newtonsoft.Json 13.0.3
+Project: https://www.newtonsoft.com/json
+Source: https://github.com/JamesNK/Newtonsoft.Json
+License: MIT License
+
+Microsoft .NET / runtime libraries
+----------------------------------
+Included components: .NET runtime files bundled with the BepInEx IL2CPP distribution, plus Microsoft.Win32.SystemEvents and System.Drawing.Common assemblies used by the NoteSplit overlay.
+Project: https://github.com/dotnet/runtime
+License: MIT License and accompanying third-party notices from Microsoft/.NET.
+
+Notes
+-----
+Third-party projects retain their own copyrights and licenses. This notice is provided for attribution and redistribution clarity. For full license text and source details, see the linked upstream projects.
