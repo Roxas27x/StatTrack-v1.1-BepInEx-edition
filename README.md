@@ -10,7 +10,7 @@ StatTrack v1.1 BepInEx Edition is a Clone Hero v1.1 NoteSplit and OBS export mod
 - Separate tracking per song speed
 - Practice mode live tracking without saving attempts or PBs
 - Bot mode protection so automated runs do not update PB data
-- OBS text exports using the existing StatTrack folder contract
+- OBS text exports are disabled for this build
 - Sharded song memory so large libraries do not require rewriting one huge memory file
 - External `NoteSplit Overlay.exe` window for OBS window capture
 
@@ -46,7 +46,7 @@ StatTrack stores user data under:
 %LOCALAPPDATA%\StatTrack
 ```
 
-OBS exports are written under:
+OBS export support is currently disabled for this build. The folder is reserved for a later release:
 
 ```text
 %LOCALAPPDATA%\StatTrack\obs
