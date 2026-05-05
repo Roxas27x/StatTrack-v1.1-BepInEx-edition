@@ -13,12 +13,15 @@ This update is mainly focused on bringing NoteSplit support back to Clone Hero v
 - NoteSplit overlay for Clone Hero v1.1
 - Accurate miss tracking through runtime hooks
 - Section-aware current, previous run, and PB counters
-- Separate tracking per song speed
+- Separate tracking per song speed and difficulty
 - Practice mode live tracking without saving attempts or PBs
 - Bot mode protection so automated runs do not update PB data
 - OBS text exports are currently disabled for this update
 - Sharded song memory so large libraries do not require rewriting one huge memory file
 - External `NoteSplit Overlay.exe` window for OBS window capture
+- Right-click overlay menu for toggling always-on-top behavior
+- Right-click purge actions for clearing current-song or all-song NoteSplit attempts/PBs
+- Cached background note-tick preload to reduce song-start hitching
 
 ## Install
 
@@ -73,6 +76,8 @@ memory\songs\*.json
 ## NoteSplit Behavior
 
 NoteSplit tracks the total miss count itself while a song is active. Overstrums are shown by turning the corresponding section's zero red, so a red `0` means the section had no missed notes but the FC was broken by an overstrum.
+
+Right-click the external NoteSplit overlay to open its menu. From there you can uncheck `Always on top`, purge the current song's NoteSplit attempts/PBs, or purge all NoteSplit attempts/PBs. Purge actions clear attempts, starts/restarts, previous-run section values, song PBs, section PBs, FC flags, and best streak data.
 
 ## Notes
 
