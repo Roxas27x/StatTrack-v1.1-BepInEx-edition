@@ -11,7 +11,7 @@ Download `BepinexV1.1.zip` from [Releases](https://github.com/Roxas27x/StatTrack
 
 This main package includes BepInEx 6 IL2CPP x64. After extraction, launch Clone Hero. The first launch may take longer while BepInEx generates IL2CPP interop files.
 
-Download the additional `.zip` files as desired and extract them into the `BepInEx/plugins` folder.
+Download the additional `.zip` files as desired and extract them into the `BepInEx/plugins` folder to activate.
 
 **NOTE: Use DX11 rendering API for the best results. DX12 / Vulkan induces stutter/lag issues, and they are generally less stable than DX11.**
 
