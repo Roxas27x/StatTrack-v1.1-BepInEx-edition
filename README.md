@@ -6,7 +6,8 @@ These packages do not patch or replace Clone Hero game binaries. Plugins are loa
 
 ## Install
 
-Download `BepinexV1.1.zip` and extract it into the root of your Clone Hero v1.1 folder, the same folder that contains `Clone Hero.exe`.
+Download `BepinexV1.1.zip` from [Releases](https://github.com/Roxas27x/StatTrack-v1.1-BepInEx-edition/releases)
+ tab and extract it into the root of your Clone Hero v1.1 folder, the same folder that contains `Clone Hero.exe`.
 
 This main package includes BepInEx 6 IL2CPP x64. After extraction, launch Clone Hero. The first launch may take longer while BepInEx generates IL2CPP interop files.
 
